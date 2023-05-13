@@ -1,0 +1,80 @@
+$date
+  Sat May 13 15:39:28 2023
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module tb $end
+$var reg 4 ! n1[3:0] $end
+$var reg 4 " n2[3:0] $end
+$var reg 1 # o $end
+$scope module greater_than_4_bits_inst $end
+$var reg 4 $ a[3:0] $end
+$var reg 4 % b[3:0] $end
+$var reg 1 & o $end
+$var reg 1 ' p3 $end
+$var reg 1 ( p2 $end
+$var reg 1 ) p1 $end
+$var reg 1 * p0 $end
+$var reg 1 + e3 $end
+$var reg 1 , e2 $end
+$var reg 1 - e1 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0011 !
+b0000 "
+1#
+b0011 $
+b0000 %
+1&
+0'
+0(
+1)
+0*
+1+
+1,
+0-
+#1000000
+b0001 "
+b0001 %
+#2000000
+b0010 "
+1#
+b0010 %
+1&
+0)
+1*
+1-
+#3000000
+b0011 "
+0#
+b0011 %
+0&
+0*
+#4000000
+b0100 "
+0#
+b0100 %
+0&
+0)
+0*
+0,
+0-
+#5000000
+b1110 "
+b1110 %
+0+
+1-
+#6000000
+b1111 "
+b1111 %
+#7000000
