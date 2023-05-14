@@ -2,10 +2,10 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-ENTITY top IS
+ENTITY adder_sub_tb IS
 END ENTITY;
 
-ARCHITECTURE arch OF top IS
+ARCHITECTURE arch OF adder_sub_tb IS
     SIGNAL co, sub : STD_LOGIC;
     SIGNAL n1, n2, output : STD_LOGIC_VECTOR(3 DOWNTO 0);
 BEGIN
