@@ -1,6 +1,5 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-USE ieee.numeric_std.ALL;
 
 ENTITY adder_4_bits IS
     PORT (
@@ -14,7 +13,7 @@ END ENTITY;
 ARCHITECTURE arch OF adder_4_bits IS
     SIGNAL co2, co1, co0 : STD_LOGIC;
 BEGIN
-    adder_inst1 : ENTITY work.adder
+    adder_inst0 : ENTITY work.full_adder
         PORT MAP(
             a => n1(0),
             b => n2(0),
@@ -23,7 +22,7 @@ BEGIN
             s => output(0)
         );
 
-    adder_inst2 : ENTITY work.adder
+    adder_inst1 : ENTITY work.full_adder
         PORT MAP(
             a => n1(1),
             b => n2(1),
@@ -32,7 +31,7 @@ BEGIN
             s => output(1)
         );
 
-    adder_inst3 : ENTITY work.adder
+    adder_inst2 : ENTITY work.full_adder
         PORT MAP(
             a => n1(2),
             b => n2(2),
@@ -41,7 +40,7 @@ BEGIN
             s => output(2)
         );
 
-    adder_inst4 : ENTITY work.adder
+    adder_inst3 : ENTITY work.full_adder
         PORT MAP(
             a => n1(3),
             b => n2(3),
