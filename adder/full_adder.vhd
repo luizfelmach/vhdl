@@ -1,8 +1,7 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-USE ieee.numeric_std.ALL;
 
-ENTITY adder IS
+ENTITY full_adder IS
     PORT (
         a, b : IN STD_LOGIC;
         ci : IN STD_LOGIC;
@@ -11,8 +10,8 @@ ENTITY adder IS
     );
 END ENTITY;
 
-ARCHITECTURE arch OF adder IS
+ARCHITECTURE arch OF full_adder IS
 BEGIN
-    s <= a XNOR b XNOR ci;
+    s <= a XOR b XOR ci;
     co <= (a AND b) OR (a AND ci) OR (b AND ci);
 END ARCHITECTURE;
