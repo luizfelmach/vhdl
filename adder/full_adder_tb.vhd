@@ -1,18 +1,16 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-USE ieee.numeric_std.ALL;
 
-ENTITY adder_tb IS
+ENTITY full_adder_tb IS
 END ENTITY;
 
-ARCHITECTURE arch OF adder_tb IS
-
+ARCHITECTURE arch OF full_adder_tb IS
     SIGNAL a, b : STD_LOGIC;
     SIGNAL ci : STD_LOGIC;
     SIGNAL co : STD_LOGIC;
     SIGNAL s : STD_LOGIC;
 BEGIN
-    adder_inst : ENTITY work.adder
+    adder_inst : ENTITY work.full_adder
         PORT MAP(
             a => a,
             b => b,
@@ -40,7 +38,7 @@ BEGIN
         b <= '1';
         WAIT FOR 1 ns;
 
-        ASSERT false REPORT "Reach end of test";
+        ASSERT false REPORT "Reached end of test.";
         WAIT;
     END PROCESS;
 END ARCHITECTURE;
